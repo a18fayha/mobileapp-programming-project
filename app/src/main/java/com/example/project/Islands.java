@@ -2,15 +2,11 @@ package com.example.project;
 
 public class Islands {
     private String name;
-    private String login;
-    private String ID;
     private String location;
     private int size;
 
-    public Islands(String name, String login, String ID, String location, int size) {
+    public Islands(String name, String location, int size) {
         this.name = name;
-        this.login = login;
-        this.ID = ID;
         this.location = location;
         this.size = size;
     }
@@ -23,21 +19,7 @@ public class Islands {
         this.name = name;
     }
 
-    public String getLogin() {
-        return login;
-    }
 
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public String getID() {
-        return ID;
-    }
-
-    public void setID(String ID) {
-        this.ID = ID;
-    }
 
     public String getLocation() {
         return location;
@@ -54,4 +36,7 @@ public class Islands {
     public void setSize(int size) {
         this.size = size;
     }
+
+
+
 }

@@ -29,7 +29,7 @@ public class Adapter  extends RecyclerView.Adapter<Adapter.ViewHolder>{
     public void onBindViewHolder(@NonNull Adapter.ViewHolder holder, int position) {
         holder.name.setText(islandsList.get(position).getName());
         holder.location.setText(islandsList.get(position).getLocation());
-        holder.size.setText(islandsList.get(position).getSize());
+        holder.size.setText(islandsList.get(position).getSize()+"");
 
 
 

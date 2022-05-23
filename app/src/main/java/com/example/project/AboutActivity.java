@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.webkit.WebView;
 
 public class AboutActivity extends AppCompatActivity {
+    private WebView webView;
 
 
 
@@ -17,7 +18,17 @@ public class AboutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
+        webView = findViewById(R.id.myWebView);
 
+
+
+        showAboutPage();
+
+
+    }
+
+    private void showAboutPage() {
+        webView.loadUrl("file:///android_asset/about.html");
 
     }
 

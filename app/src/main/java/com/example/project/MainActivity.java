@@ -23,8 +23,6 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
     private List<Islands> islandsList;
     private RecyclerView recyclerView;
     private Adapter adapter;
-
-
     private final String JSON_URL = "https://mobprog.webug.se/json-api?login=a18fayha";
 
     @Override
@@ -39,11 +37,6 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
         adapter = new Adapter(islandsList);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(adapter);
-
-
-
-
-
 
 
         new JsonTask(MainActivity.this).execute(JSON_URL);
@@ -78,8 +71,6 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
 
             return true;
         }
-
-
         return super.onOptionsItemSelected(item);
     }
 }
